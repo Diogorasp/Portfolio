@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="../css/Stile.css" type="text/css" rel="stylesheet" />
+    <style>
+        /* Stile per la navbar */
+        .navbar {
+            background-color: black;
+            padding: 15px;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Sezione Hero */
+        /* .hero {
+            background: url('../../media/pizza.png') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .btn-green {
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-black {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        } */
+
+        /* Sezione Servizi */
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .service-box {
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .service-box i {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .service-box h3 {
+            color:#1CB698;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .service-box p {
+            font-size: 16px;
+            color: white;
+            
+        }
+
+/* Cambiare colore dell'icona hamburger */
+.navbar-toggler {
+            border-color: white !important;
+        }
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        /* MENU MOBILE A DESTRA */
+        @media (max-width: 991px) { /* Solo per schermi piccoli */
+            .offcanvas-end {
+                background-color: black; /* Sfondo nero */
+                color: white;
+                width: 250px; /* Larghezza del menu */
+            }
+            .offcanvas a {
+                color: white;
+                font-size: 18px;
+                padding: 10px;
+            }
+        }
+
+        .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(47%) sepia(44%) saturate(376%) hue-rotate(120deg) brightness(92%) contrast(91%);
+}
+
+body{
+    background-color: #1e2326;
+}
+
+h2{
+    color:#1CB698;
+    font-weight: bold;
+}
+p{
+    color: white;
+}
+.lead {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+   <!-- MENù -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="../../index.html">Diego Emilio Raspini</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="../../index.html#sobremi" onclick="seleccionar()">CHI SONO</a></li>
+<li><a href="../../index.html#skills" onclick="seleccionar()">SKILLS</a></li>
+<li><a href="../../index.html#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+<li><a href="../../index.html#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+<li><a href="../../index.html#contattami" onclick="seleccionar()">CONTATTAMI</a></li>
+
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+    <!-- Sezione Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="display-4">Morbide Zampette</h1>
+            <!-- <h2 class="lead font-weight-bold">Sito web toelettatura (sito offline)</h2> -->
+        </div>
+    </section>
+
+   <!-- Sezione Servizi -->
+<section class="services">
+    <div class="container">
+        <h2 class="text-center">Servizi che ho attuato</h2>
+        <div class="row">
+            <div class="col-md-6 text-center service-box">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Social Content Design</h3>
+                <p>	Creazione grafica/video per social media.</p>
+            </div>
+            <div class="col-md-6 text-center service-box">
+                <i class="fa-solid fa-pen"></i>
+                <h3>Copywriting</h3>
+                <p>è un tipo di scrittura orientata a risultati di marketing, come la vendita di prodotti o servizi o l'incentivare l'azione di un utente.</p>
+            </div>
+            <div class="col-md-6 text-center service-box">
+                <i class="fa-solid fa-user"></i>
+                <h3>Social Media Marketing</h3>
+                <p>L’insieme di strategie per promuovere un brand, prodotto o servizio sui social media.</p>
+            </div>
+            <div class="col-md-6 text-center service-box">
+                <i class="fas fa-chart-line"></i>
+                <h3>Trend-Based Content o Real-Time Marketing</h3>
+                <p>Creare contenuti legati a tendenze attuali, eventi virali, meme o notizie del momento per cavalcare l’attenzione del pubblico.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sezione Grooming & Styling con Carousel -->
+<section class="container my-5">
+    <div class="row align-items-center">
+        <!-- Testo a sinistra -->
+        <div class="col-md-6">
+            <h2>Creazione Reel Instagram con Canva</h2>
+            <p>
+                Ho creato un reel per  instagram, 
+                realizzato partendo da zero.
+            </p>
+        </div>
+        <!-- Immagini con Carousel -->
+        <div class="col-md-6 text-center">
+            <div id="carouselExample" class="carousel slide" >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <video class="d-block w-100 img-fluid rounded" autoplay muted loop playsinline>
+                    <source src="../../media/reels.mp4" type="video/mp4">
+                    Il tuo browser non supporta il video HTML5.
+                </video>
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="../../media/11.JPG" class="d-block w-100 img-fluid rounded" alt="Immagine 2">
+                    </div> -->
+                </div>
+                <!-- Pulsanti per navigare -->
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Precedente</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Successivo</span>
+                </button> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sezione Amore per il Lavoro -->
+<!-- <section class="container my-5">
+    <div class="row align-items-center"> -->
+        <!-- Slider con Immagini a sinistra -->
+        <!-- <div class="col-md-6 text-center">
+            <div id="carouselLavoro" class="carousel slide" >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../../media/quiz time !.jpg" alt="Barboncino bianco" class="d-block w-100 img-fluid rounded">
+                    </div> -->
+                    <!-- <div class="carousel-item">
+                        <img src="../../media/9.JPG" alt="Cane tosato" class="d-block w-100 img-fluid rounded">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../../media/10.JPG" alt="Cane tosato" class="d-block w-100 img-fluid rounded">
+                    </div> -->
+                <!-- </div> -->
+                <!-- Pulsanti per navigare -->
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselLavoro" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Precedente</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselLavoro" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Successivo</span>
+                </button> -->
+            <!-- </div>
+        </div> -->
+        <!-- Testo a destra -->
+        <!-- <div class="col-md-6">
+            <h2>Risultato </h2>
+            <p>
+            Ecco come appare la storia o il post.
+            </p>
+        </div>
+    </div>
+</section> -->
+
+<!-- Footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="footer-container">
+        <!-- Colonna 1: Info -->
+        <div class="footer-section">
+            <h5>Diego Raspini</h5>
+            <p><i class="fas fa-phone"></i> +39 3801822102</p>
+            <p><i class="fas fa-envelope"></i> diegoraspini88@gmail.com</p>
+        </div>
+
+        <!-- Colonna 2: Link Utili -->
+        <div class="footer-section">
+            <h5>Link Utili</h5>
+            <ul>
+                <li><a href="../../index.html#sobremi">Chi Sono</a></li>
+                <li><a href="../../index.html#skills">Skills</a></li>
+                <li><a href="../../index.html#curriculum">Curriculum</a></li>
+                <li><a href="../../index.html#portfolio">Portfolio</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- Colonna 3: Social -->
+        <div class="footer-section">
+            <h5>Seguimi sui Social</h5>
+            <div class="social-icons">
+                <a href="https://wa.me/393801822102" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/diego_raspini_"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/diego228802"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Diego Raspini - Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

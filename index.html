@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link href="assets/css/Stile.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<!-- MENù -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="#">Diego Emilio Raspini</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#sobremi" onclick="seleccionar()">CHI SONO</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTATTAMI</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
+
+<!-- SEZIONE INIZIO -->
+<section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="sonoio.jpeg" alt="">
+        </div>
+        <h1>DIEGO EMILIO RASPINI</h1>
+        <h2>Ragioniere programmatore</h2>
+        <div class="redes">
+            <a href="https://www.instagram.com/diego_raspini_/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/diego-emilio-raspini-7761b5242/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=3801822102"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://t.me/3801822102"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION SOBRE MI -->
+<section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Mi presento</h2>
+        <p><span>Ciao, io sono Diego Raspini.</span>Sono un ragazzo con una grande voglia di imparare e mettermi in gioco. Leggo molti libri, che siano di  programmazione e non . Ho un'ottima padronanza del computer e dei suoi principali programmi,
+
+            ho esperienza nello sviluppo web con HTML, CSS, PHP e JavaScript, avendo realizzato siti per diversi clienti. Per alcuni di loro ho lavorato anche con il CMS WordPress, acquisendo competenze nella personalizzazione e gestione di siti web.
+            
+            Inoltre, ho esperienza nei database e nel linguaggio SQL, così come nel linguaggio Delphi, grazie a un tirocinio di un anno presso un'azienda informatica.
+            
+            Mi occupo anche di video editing, utilizzando software professionali come VEGAS Pro e Adobe Premiere e di realizzazioni grafiche riuscendo a  mescolare foto generate dall'ia con strumenti come Canva. Sono una persona seria, attenta ai dettagli e sempre determinata a portare a termine ogni lavoro nel modo più preciso e professionale possibile.</p>
+
+        <div class="fila">
+            <!-- datos personales -->
+            <div class="col">
+                <h3>Dati Personali</h3>
+                <ul>
+                    <li>
+                        <strong>Compleanno</strong>
+                        05-04-2002
+                    </li>
+                    <li>
+                        <strong>Cellulare</strong>
+                        3801822102
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        diegoraspini88@gmail.com
+                    </li>
+                    <li>
+                        <strong>Sesso</strong>
+                        M
+                    </li>
+                    <li>
+                        <strong>Indirizzo</strong>
+                        Via Damone 4, Siracusa
+                    </li>
+                    <li>
+                        <strong>Titolo di studio</strong>
+                        <span>Diploma Amministrazione Finanza e Marketing <br> con Articolazione in Sistemi Informativi (Ragioniere Sia)</span></br>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- interessi -->
+            <div class="col">
+                <h3>Interessi</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>Pc e Code</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>Viaggiare</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Lavoro</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-regular fa-futbol"></i>
+                        <span>Sport</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-book"></i>
+                        <span>LIBRI</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-video"></i>
+                        <span>Editing</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Gaming</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button>
+            <style>
+                /* Stile per il link di download del PDF */
+                .download-link {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #1CB698;
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: bold;
+                    border-radius: 5px;
+                }
+
+                .download-link:hover {
+                    background-color: #1CB698;
+                }
+            </style>
+
+            <a href="parts/Curriculum Raspini Diego Emilio.pdf" download class="download-link">Scarica il mio CV</a>
+            <span class="overlay"></span>
+        </button>
+    </div>
+</section>
+
+<!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!-- Technical Skill -->
+            <div class="col">
+                <h3>Quello che so fare</h3>
+                <div class="skill">
+                    <span>Wordpress</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Pacchetto office</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Html,Css,php,JavaScript</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Video Editing</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>55%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Realizzazioni grafiche</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Professional Skills -->
+            <div class="col">
+                <h3>secondo la mia opinione</h3>
+                <div class="skill">
+                    <span>SQL</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>95%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Delphi</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>85%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Comunicazione</span>
+                    <div class="barra-skill">
+                        <div class="progreso">
+                            <span>99%</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Scuola ed </h3>
+                <div class="item izq">
+                    <h4>Programmatore Informatico Delphi (Object Pascal ed SQL)</h4>
+                    <span class="casa">Presso Siteam s.r.l</span>
+                    <span class="casa">Periodo lavorativo </span>
+                    <span class="fecha">Maggio 2024 – Gennaio 2025</span>
+                    <br>Programmazione e gestione software aziendale per farmacie,utilizzando Delphi ed SQL</br>
+                    <br> 
+                        <br></br>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Corso Object Pascal, Delphi, Firedac, IBO, SQL</h4>
+                    <span class="casa">Svolto tramite Bit time</span>
+                    <span class="fecha">Febbraio-Marzo-Aprile 2024</span>
+                    <p>Studiare ed utilizzare Delphi ed SQL </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Creazione sito per Pizzeria da Vito</h4>
+                    <span class="casa">Svolto per richiesta di un cliente</span>
+                    <span class="fecha">Settembre 2023</span>
+                    <p>Sito web per una pizzeria con salvataggio delle prenotazioni in un db.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Creazione Blog IHADSEETHAT</h4>
+                    <span class="casa">Svolto per richiesta di un cliente</span>
+                    <span class="fecha">febbraio 2023</span>
+                    <p>Blog di notizie su serie tv e anime</p>
+                    <br> 
+                        <br></br>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Istruzione e formazione </h4>
+                    <span class="casa">I.I.S.S. Filadelfo Insolera Siracusa</span>
+                    <span class="casa">Anno conseguimento diploma</span>
+                    <span class="fecha">2020 - 2021</span>
+                    <br>Diploma Tecnico Commerciale con Articolazione in Sistemi Informativi (Ragioniere Sia) </br>
+                    <br> Voto finale : 85/100
+                        <br>Livello EQF: 4</br>
+                        <br> 
+                        <br></br>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3> Esperienze </h3>
+                <div class="item der">
+                    <h4> Corso Sistemista Informatico e Cybersecurity</h4>
+                    <span class="casa">svolto tramite Talentform </span>
+                    <span class="fecha">Febbraio-Marzo 2025</span>
+                    <p>progettazione, dell'installazione e della configurazione di un sistema informatico e di mantenerlo operativo e
+                        sicuro, attraverso operazioni di manutenzione e aggiornamento.</p>
+                    <br> 
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Corso DMVCFramework, TemplatePro e HTMX</h4>
+                    <span class="casa">Svolto tramite Bit time</span>
+                    <span class="fecha">27 novembre 2024 - 28 novembre 2024</span>
+                    <p>Utilizzo di DMVCFramework, TemplatePro e HTMX per sviluppare applicazioni web con Delphi</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Creazione sito per Peppe Barber Shop </h4>
+                    <span class="casa">Svolto per richiesta di un cliente</span>
+                    <span class="fecha">Dicembre 2023 </span>
+                    <p>Sito per barbiere con opzioni di prenotazioni e gestione di esse </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Creazione sito per toelettatura Morbide Zampette </h4>
+                    <span class="casa">Svolto per richiesta di un cliente</span>
+                    <span class="fecha">Giugno 2023</span>
+                    <p>Sito Toelettatura con opzione di salvataggio delle prenotazioni e gestione di esse </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Corso di potenziamento web designer </h4>
+                    <span class="casa">Svolto tramite Sikeweb Siracusa</span>
+                    <span class="fecha">settembre 2022 - gennaio 2023</span>
+                    <p>Corso di programmazione in  Php, Html, Css,  Javascript ed utilizzo di Database (MariaDb, MySql, Micorosft Access),con progetto finale </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEZIONE siti web -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>Realizzazioni siti web e gestionali</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="media/fto profilo toelettatura.JPG" alt="Morbide Zampette">
+                <div class="overlay">
+                    <h3>Morbide Zampette</h3>
+                    <p>Toelettatura per animali con prenotazioni .</p>
+                    <a href="assets/lavori/Toelettatura.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="media/foto profilo pizzeria.JPG" alt="Pizzeria da Vito">
+                <div class="overlay">
+                    <h3>Pizzeria da Vito</h3>
+                    <p>Sito web con gestione prenotazioni.</p>
+                    <a href="assets/lavori/Pizzeria.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="media/foto profilo barbiere.JPG" alt="Peppe Barber Shop">
+                <div class="overlay">
+                    <h3>Peppe Barber Shop</h3>
+                    <p>Sito web con gestione appuntamenti per barbieri.</p>
+                    <a href="assets/lavori/Barbiere.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="media/16.jpeg" alt="IHADSEETHAT">
+                <div class="overlay">
+                    <h3>IHADSEETHAT</h3>
+                    <p>Blog su serie TV e anime.</p>
+                    <a href="assets/lavori/blog.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SEZIONE grafiche -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>Realizzazioni Grafiche</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="media/pizza.png" alt="Pizza e coca-cola">
+                <div class="overlay">
+                    <h3>Pizzeria Ipotetica</h3>
+                    <p>Foto ia+Canva .</p>
+                    <a href="assets/lavori/CanvaPizzeria.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="media/inglese.jpg" alt="Pizzeria da Vito">
+                <div class="overlay">
+                    <h3>Volantino Ipotetico</h3>
+                    <p>Utilizzo di Canva.</p>
+                    <a href="assets/lavori/CanvaInglese.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="media/quiz time !.jpg" alt="Peppe Barber Shop">
+                <div class="overlay">
+                    <h3>Storie Instagram con Canva</h3>
+                    <p>Creazione storia instagram.</p>
+                    <a href="assets/lavori/Canvaquiz.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="media/reelsfoto.jpg" alt="IHADSEETHAT">
+                <div class="overlay">
+                    <h3>Creazione Reel</h3>
+                    <p>Reel per Instagram.</p>
+                    <a href="assets/lavori/CanvaReels.html" class="btn">Vedi Progetto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SEZIONE CONTATTI MODERNA -->
+<section id="contatti" class="contatti">
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+        <h2>Contattami</h2>
+        <p>Hai domande o vuoi collaborare? Compila il modulo e ti risponderò al più presto!</p>
+        
+        <div class="form-container">
+            <form action="#" method="POST">
+                <div class="campo">
+                    <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                </div>
+                <div class="campo">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="campo">
+                    <textarea id="messaggio" name="messaggio" rows="5" placeholder="Il tuo messaggio" required></textarea>
+                </div>
+                <button type="submit" class="btn-invia">Invia Messaggio</button>
+            </form>
+        </div>
+
+        <div class="info-contatto">
+            <ul>
+                <!-- <li><strong>Email:</strong> diegoraspini88@gmail.com</li>
+                <li><strong>Cellulare:</strong>+39 3801822102</li> -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="footer-container">
+        <!-- Colonna 1: Info -->
+        <div class="footer-section">
+            <h5>Diego Raspini</h5>
+            <p><i class="fas fa-phone"></i> +39 3801822102</p>
+            <p><i class="fas fa-envelope"></i> diegoraspini88@gmail.com</p>
+        </div>
+
+        <!-- Colonna 2: Link Utili -->
+        <div class="footer-section">
+            <h5>Link Utili</h5>
+            <ul>
+                <li><a href="#sobremi">Chi Sono</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </div>
+
+        <!-- Colonna 3: Social -->
+        <div class="footer-section">
+            <h5>Seguimi sui Social</h5>
+            <div class="social-icons">
+                <a href="https://wa.me/393801822102" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/diego_raspini_"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/diego228802"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Diego Raspini - Tutti i diritti riservati.</p>
+    </div>
+</footer>
+
+
+
+
+<script src="assets/js/move.js"></script>
+</body>
+</html>
+<?php
